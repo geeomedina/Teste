@@ -61,3 +61,7 @@ nomedoarquivo
 
 - Quer renomear arquivos do repositório?
 > git mv [nome do arquivo atual].[extensão] [novo nome].[mesma extensão]
+
+
+- Quer mover o arquivo?
+> git mv [nome do arquivo atual].[extensão] [nome da pasta]/[novo nome].[mesma extensão]
