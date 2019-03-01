@@ -7,14 +7,57 @@
 > git add [nomedoarquivo.extensão]
 > git commit -m "Insira qualquer mensagem sobre a alteração aqui"
 
-Fez modificação nova???
 
+- Fez modificação nova???
 > git status
 > git add [nomedoarquivo.extensão]
 > git commit -m "Insira mensagem sobre a modificação aqui"
-> git remote add origin https://github.com/[seu username configurado no início]/[nome do diretório no Github].git
+> git remote add origin https://github.com/[seu username configurado no início]/[nome do diretório no Github].git (apenas para o primeiro add)
 > git push origin master / se não funcionar, git push origin master --force (perde as alterações pendentes)
 
-Quer baixar em outra pasta?
 
+- Quer baixar em outra pasta?
 > git clone https://github.com/[seu username configurado no início]/[nome do diretório no Github].git
+
+
+- Deseja verificar o histórico do repositório?
+> git log
+> git log -n X (x é o número dos últimos commits)
+> git log --oneline (resumido em uma linha)
+> git log --stat
+
+
+- Quer adicionar todos os arquivos do diretório, ao invés de mandar um por um?
+> git add .
+
+
+- Ver as diferenças entre as versões não comitadas:
+> git diff
+
+- Quer ignorar arquivos?
+> Crie um novo arquivo (texto) chamado .gitignore
+> Coloque o nome dos arquivos que você deseja ignorar nos commits, da seguinte maneira:
+
+nomedapasta/
+nomedoarquivo
+
+> Não esqueça de adicioná-lo à area de stage com:
+> git add .gitignore
+
++ Deseja ignorar arquivos de determinadas extensões?
+> dentro do .gitignore, insira:
+> [nomedodiretório]/*.[nomedaextensão]
+> *.[nomedaextensão]
+
+
+- Quer adicionar e comitar arquivos ao mesmo tempo?
+> git commit -am "Insira mensagem aqui"
+* para adicionar o arquivo pela primeira vez, ainda precisa do git add [nomedoarquivo]
+
+
+- Quer remover arquivos do repositório?
+> git rm [nome do arquivo]
+
+
+- Quer renomear arquivos do repositório?
+> git mv [nome do arquivo atual].[extensão] [novo nome].[mesma extensão]

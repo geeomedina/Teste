@@ -20,9 +20,19 @@
 > git clone https://github.com/[seu username configurado no início]/[nome do diretório no Github].git
 
 
+- Deseja verificar o histórico do repositório?
+> git log
+> git log -n X (x é o número dos últimos commits)
+> git log --oneline (resumido em uma linha)
+> git log --stat
+
+
 - Quer adicionar todos os arquivos do diretório, ao invés de mandar um por um?
 > git add .
 
+
+- Ver as diferenças entre as versões não comitadas:
+> git diff
 
 - Quer ignorar arquivos?
 > Crie um novo arquivo (texto) chamado .gitignore
@@ -38,3 +48,8 @@ nomedoarquivo
 > dentro do .gitignore, insira:
 > [nomedodiretório]/*.[nomedaextensão]
 > *.[nomedaextensão]
+
+
+- Quer adicionar e comitar arquivos ao mesmo tempo?
+> git commit -am "Insira mensagem aqui"
+* para adicionar o arquivo pela primeira vez, ainda precisa do git add [nomedoarquivo]
